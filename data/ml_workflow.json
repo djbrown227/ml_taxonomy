@@ -1,0 +1,9 @@
+[
+    { "step": "Data Collection", "description": "Gather raw data from sensors, logs, or APIs" },
+    { "step": "Data Cleaning", "description": "Remove noise, handle missing values, normalize" },
+    { "step": "Feature Engineering", "description": "Extract meaningful signals" },
+    { "step": "Model Training", "description": "Use algorithms to learn from data" },
+    { "step": "Evaluation", "description": "Assess performance on unseen data" },
+    { "step": "Deployment", "description": "Integrate into real-world applications" }
+  ]
+  

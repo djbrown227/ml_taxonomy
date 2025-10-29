@@ -1,0 +1,298 @@
+    /* --- Basic Reset & Body --- */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { 
+      font-family:'Inter',sans-serif; 
+      background:#fefefe; 
+      color:#1a1a1a; 
+      line-height:1.6; 
+      -webkit-font-smoothing:antialiased; 
+      -moz-osx-font-smoothing:grayscale; 
+    }
+
+    .magazine-container { 
+      max-width:1100px; 
+      margin:0 auto; 
+      padding:80px 40px 120px; 
+    }
+
+    .category-label { 
+      font-size:11px; 
+      font-weight:600; 
+      letter-spacing:2px; 
+      text-transform:uppercase; 
+      color:#999; 
+      margin-bottom:24px; 
+      font-family:'Inter',sans-serif; 
+    }
+
+    h1 { 
+      font-family:'Playfair Display',Georgia,serif; 
+      font-size:56px; 
+      font-weight:600; 
+      line-height:1.1; 
+      margin-bottom:28px; 
+      color:#0a0a0a; 
+      letter-spacing:-0.02em; 
+    }
+
+    .subtitle { 
+      font-size:20px; 
+      line-height:1.6; 
+      color:#4a4a4a; 
+      margin-bottom:16px; 
+      font-weight:300; 
+      max-width:700px; 
+    }
+
+    .byline { 
+      font-size:13px; 
+      color:#666; 
+      margin-bottom:48px; 
+      font-weight:400; 
+    }
+    .byline span { color:#999; }
+
+    .divider { 
+      width:60px; 
+      height:1px; 
+      background:#d0d0d0; 
+      margin:60px 0; 
+    }
+
+    .article-body { 
+      max-width:700px; 
+      margin:80px 0; 
+    }
+    
+    .article-body p { 
+      font-size:18px; 
+      line-height:1.8; 
+      color:#2a2a2a; 
+      margin-bottom:24px; 
+      font-weight:400; 
+    }
+    
+    .article-body .drop-cap::first-letter { 
+      font-family:'Playfair Display',Georgia,serif; 
+      font-size:72px; 
+      line-height:0.85; 
+      float:left; 
+      padding-right:12px; 
+      padding-top:8px; 
+      font-weight:600; 
+      color:#0a0a0a; 
+    }
+
+    .pull-quote { 
+      font-family:'Playfair Display',Georgia,serif; 
+      font-size:28px; 
+      line-height:1.4; 
+      color:#1a1a1a; 
+      margin:60px 0; 
+      padding-left:40px; 
+      border-left:3px solid #667eea; 
+      font-weight:400; 
+      font-style:italic; 
+    }
+
+    /* --- KPI Data Showcase --- */
+    .data-showcase { 
+      display:grid; 
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); 
+      gap:32px; 
+      margin:80px 0; 
+      max-width:100%; 
+    }
+    
+    .data-card { 
+      padding-top:24px; 
+      border-top:3px solid #667eea; 
+      background:transparent; 
+    }
+    
+    .data-number { 
+      font-family:'Playfair Display',Georgia,serif; 
+      font-size:56px; 
+      font-weight:600; 
+      line-height:1; 
+      color:#0a0a0a; 
+      margin-bottom:16px; 
+      letter-spacing:-0.02em; 
+    }
+    
+    .data-label { 
+      font-size:15px; 
+      font-weight:600; 
+      color:#1a1a1a; 
+      margin-bottom:8px; 
+      letter-spacing:-0.01em; 
+    }
+    
+    .data-context { 
+      font-size:14px; 
+      line-height:1.6; 
+      color:#666; 
+      font-weight:400; 
+    }
+
+    /* --- Chart Feature Section --- */
+    .chart-feature { 
+      margin:80px 0; 
+      max-width:100%; 
+    }
+    
+    .chart-header { 
+      margin-bottom:40px; 
+      max-width:700px; 
+    }
+    
+    .chart-title { 
+      font-family:'Playfair Display',Georgia,serif; 
+      font-size:36px; 
+      font-weight:600; 
+      line-height:1.2; 
+      color:#0a0a0a; 
+      margin-bottom:16px; 
+      letter-spacing:-0.02em; 
+    }
+    
+    .chart-description { 
+      font-size:17px; 
+      line-height:1.7; 
+      color:#4a4a4a; 
+      font-weight:400; 
+    }
+    
+    .chart-content { 
+      margin-bottom:0px; 
+      margin-left: 0px;
+      margin-right:0px;
+      margin-top: 0px;
+      background:#fafafa;
+      border-radius:2px;
+      padding:40px;
+      min-height:200px;
+    }
+    
+    .plot-container { 
+      width:100%; 
+      min-height:600px; 
+    }
+    
+    .chart-credits { 
+      display:flex; 
+      justify-content:space-between; 
+      align-items:center; 
+      font-size:12px; 
+      color:#999; 
+      padding-top:16px; 
+      border-top:1px solid #f0f0f0; 
+      font-weight:400; 
+    }
+
+    /* --- Two Column Section --- */
+    .row { 
+      display:grid; 
+      grid-template-columns:1.5fr 3.0fr; 
+      gap:60px; 
+      margin:80px 0; 
+      align-items:start; 
+    }
+    
+    .column { min-width:0; }
+    
+    .editorial-text h3 { 
+      font-family:'Playfair Display',Georgia,serif; 
+      font-size:36px; 
+      font-weight:600; 
+      line-height:1.3; 
+      color:#0a0a0a; 
+      margin-bottom:24px; 
+      letter-spacing:-0.01em; 
+    }
+    
+    .editorial-text p { 
+      font-size:17px; 
+      line-height:1.8; 
+      color:#2a2a2a; 
+      margin-bottom:24px; 
+      font-weight:400; 
+    }
+    
+    .editorial-text strong { 
+      font-weight:600; 
+      color:#0a0a0a; 
+    }
+    
+    .editorial-text em { 
+      font-style:italic; 
+      color:#4a4a4a; 
+    }
+
+    /* --- Closing Section --- */
+    .closing-container {
+      max-width: 900px;
+      margin: 100px auto 120px;
+      padding: 60px 40px;
+      background: #f8f8f8;
+      border-left: 6px solid #667eea;
+      border-radius: 8px;
+    }
+
+    .closing-article p {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      line-height: 1.9;
+      color: #1a1a1a;
+      font-weight: 400;
+    }
+
+    .closing-article .drop-cap::first-letter {
+      font-size: 80px;
+      line-height: 0.8;
+      float: left;
+      padding-right: 14px;
+      padding-top: 6px;
+      font-weight: 700;
+      color: #667eea;
+    }
+
+    /* --- D3 Chart Styling --- */
+    svg text {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+    }
+
+    #sunburst, #tree {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width:768px){
+      .magazine-container{ padding:40px 24px 80px; }
+      h1{ font-size:36px; }
+      .subtitle{ font-size:17px; }
+      .article-body p{ font-size:17px; }
+      .pull-quote{ font-size:22px; padding-left:24px; }
+      .data-showcase{ grid-template-columns:1fr; gap:40px; }
+      .data-number{ font-size:48px; }
+      .chart-title{ font-size:28px; }
+      .chart-description{ font-size:16px; }
+      .chart-content{ padding:20px; min-height:400px; }
+      .plot-container{ min-height:400px; }
+      .row{ grid-template-columns:1fr; gap:40px; }
+      .editorial-text h3{ font-size:24px; }
+      .editorial-text p{ font-size:17px; }
+      .closing-container {
+        padding: 40px 24px;
+        margin: 60px auto 80px;
+      }
+      .closing-article p {
+        font-size: 18px;
+      }
+      .closing-article .drop-cap::first-letter {
+        font-size: 60px;
+        padding-right: 10px;
+      }
+    }

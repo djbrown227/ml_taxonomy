@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Machine Learning Algorithms: A Visual Guide</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- D3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <div class="magazine-container">
+    <div class="category-label">Machine Learning</div>
+    <h1>A Visual Guide to ML Algorithms</h1>
+    <p class="subtitle">
+      Exploring the landscape of machine learning: from supervised learning to neural networks, understanding the methods that power modern AI
+    </p>
+    <div class="byline">By Research Team <span>·</span> October 27, 2025</div>
+    <div class="divider"></div>
+
+    <!-- Opening Article -->
+    <div class="article-body">
+        <p class="drop-cap">
+          Machine learning can feel like a maze of hundreds of algorithms. To make sense of it, we created a <strong>visual map of ML algorithms</strong> using a sunburst chart. Explore major categories—like classification, regression, clustering, and generative modeling—and see how individual methods connect, what they do, and where they’re used.  
+          <strong>Learn the landscape at a glance.</strong>
+        </p>
+    </div>
+      
+      
+
+    <!-- KPI Showcase -->
+    <div class="data-showcase">
+      <div class="data-card">
+        <div class="data-number">6</div>
+        <div class="data-label">Major Categories</div>
+        <div class="data-context">Fundamental approaches to teaching machines how to learn</div>
+      </div>
+      <div class="data-card">
+        <div class="data-number">∞</div>
+        <div class="data-label">Applications</div>
+        <div class="data-context">From healthcare diagnostics to financial forecasting</div>
+      </div>
+    </div>
+
+    <div class="pull-quote">
+      "The question is not whether AI will transform our world, but how quickly we can understand and guide that transformation."
+    </div>
+
+    <!-- Sunburst Chart -->
+    <div class="chart-feature">
+      <div class="chart-header">
+        <h3 class="chart-title">The ML Algorithm Hierarchy</h3>
+        <p class="chart-description">A zoomable sunburst visualization revealing the nested structure of machine learning methods, from broad categories to specific implementations.</p>
+      </div>
+      <div class="chart-content">
+        <div id="sunburst" class="plot-container"></div>
+      </div>
+      <div id="algorithm-view" style="display:none; text-align:center;">
+        <button id="back-button" style="margin-bottom:10px;">← Back to Chart</button>
+        <h2 id="algo-title"></h2>
+        <img id="algo-image" style="max-width:400px; display:block; margin:0 auto 10px;" />
+        <p id="algo-description" style="max-width:500px; margin:auto; font-size:14px; line-height:1.5;"></p>
+      </div>
+      
+      <div class="chart-credits">
+        <span>Source: Daniel Brown</span>
+        <span>Interactive: Click segments to zoom</span>
+      </div>
+    </div>
+    <!-- Text + Tree Chart -->
+    <section>
+      <div class="row">
+        <div class="column">
+            <div class="editorial-text">
+                <h3>Explore ML Families</h3>
+                <p>Machine learning algorithms fall into <strong>distinct families</strong>, each designed to solve different kinds of problems. <strong>Supervised learning</strong> predicts outcomes from labeled data, <strong>unsupervised learning</strong> uncovers hidden patterns in data, and <strong>reinforcement learning</strong> optimizes strategies through trial and error, learning from feedback over time.</p>
+                <p><strong>Neural networks</strong> mimic the human brain, using layers of interconnected nodes to tackle complex tasks like image recognition or natural language processing. Other specialized methods, like <strong>dimensionality reduction</strong> and <strong>anomaly detection</strong>, help simplify data and highlight unusual patterns.</p>
+                <p>This tree visualizes how <strong>specialized algorithms branch</strong> from core concepts, showing their relationships and hierarchy. It provides a clear, structured map of the ML landscape, making it easier to understand which methods are suited for which challenges and how different approaches connect in practice.</p>
+              </div>                                
+        </div>
+        <div class="column">
+          <div class="chart-feature">
+            <div class="chart-header">
+              <h3 class="chart-title">Algorithm Family Tree</h3>
+              <p class="chart-description">Hierarchical view showing the evolutionary relationships between different machine learning approaches.</p>
+            </div>
+            <div class="chart-content">
+              <div id="tree" class="plot-container"></div>
+            </div>
+            <div class="chart-credits"><span>Source: Daniel Brown</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+<!-- Closing Section -->
+<div class="closing-container">
+    <div class="closing-article">
+      <p class="drop-cap">
+        We’ve mapped the world of machine learning algorithms to make it easier to explore and understand. Now, we want to make this <strong>taxonomic map</strong> even better—together.
+      </p>
+      <p>
+        If you have ideas, suggestions, or new algorithms to add, we’d love your input. How could this project be improved? How could it be more useful or interactive? Share your thoughts and contribute on <a href="https://github.com/your-repo" target="_blank">GitHub</a>.
+      </p>
+      <p>
+        Let’s build a collaborative, living map of machine learning—one that grows with the field itself.
+      </p>
+    </div>
+  </div>
+  
+  
+
+  <!-- Scripts -->
+  <script src="charts/ml_sunburst.js"></script>
+  <script src="charts/ml_tree.js"></script>
+  <script src="charts/ml_tradeoffs.js"></script>
+  <script src="charts/ml_workflow.js"></script>
+  <script src="charts/ml_visualizations_part1.js"></script>
+  <!-- Additional visualizations - Part 2 -->
+<script src="charts/ml_visualizations_part2.js"></script>
+<!-- Additional visualizations - Part 3 -->
+<script src="charts/ml_visualizations_part3.js"></script>
+</body>
+</html>

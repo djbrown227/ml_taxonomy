@@ -1,0 +1,108 @@
+{
+  "name": "ML Algorithms",
+  "children": [
+    {
+      "name": "Classification",
+      "children": [
+        {
+          "name": "Logistic Regression",
+          "description": "Predicts binary outcomes by modeling the probability of class membership using a logistic function. Optimizes by minimizing the cross-entropy loss. Used for tasks like email spam detection or medical diagnosis."
+        },
+        {
+          "name": "Decision Trees",
+          "description": "Predicts discrete class labels by recursively splitting data on feature thresholds. Optimizes by minimizing impurity (e.g., Gini or entropy) at each split. Used for customer segmentation or credit risk assessment."
+        },
+        {
+          "name": "Random Forests",
+          "description": "Predicts class labels by aggregating multiple decision trees trained on random subsets of data and features. Optimizes ensemble accuracy and reduces variance. Used for robust classification in finance or healthcare."
+        },
+        {
+          "name": "SVM",
+          "description": "Predicts class labels by finding the hyperplane that maximizes the margin between classes in feature space. Optimizes the margin while minimizing classification errors. Used for text classification or image recognition."
+        },
+        {
+          "name": "Neural Networks",
+          "description": "Predicts class labels using layered nonlinear transformations inspired by biological neurons. Optimizes weights by minimizing a loss function via backpropagation. Used for complex tasks like speech recognition or image classification."
+        }
+      ]
+    },
+    {
+      "name": "Regression",
+      "children": [
+        {
+          "name": "Linear Regression",
+          "description": "Predicts continuous outcomes by modeling a linear relationship between input features and the target variable. Optimizes by minimizing the sum of squared residuals. Used for predicting prices, sales, or trends."
+        },
+        {
+          "name": "Ridge/Lasso Regression",
+          "description": "Predicts continuous outcomes with linear models that include regularization to prevent overfitting (Ridge: L2, Lasso: L1). Optimizes a regularized sum of squared residuals. Used for predicting outcomes with many correlated features."
+        },
+        {
+          "name": "GBM / XGBoost",
+          "description": "Predicts continuous or categorical outcomes by sequentially combining decision trees in a boosting framework. Optimizes a differentiable loss function using gradient descent. Used for high-performance predictions in finance or competitions."
+        }
+      ]
+    },
+    {
+      "name": "Clustering",
+      "children": [
+        {
+          "name": "K-Means",
+          "description": "Groups data into K clusters by iteratively assigning points to the nearest centroid and updating centroids. Optimizes by minimizing within-cluster sum of squared distances. Used for market segmentation or image compression."
+        },
+        {
+          "name": "DBSCAN",
+          "description": "Identifies clusters of arbitrary shape by grouping high-density regions and marking low-density points as outliers. Optimizes density connectivity. Used for geospatial clustering or anomaly detection."
+        }
+      ]
+    },
+    {
+      "name": "Dimensionality Reduction",
+      "children": [
+        {
+          "name": "PCA",
+          "description": "Reduces data dimensionality by finding new axes (principal components) that capture the most variance. Works by rotating the coordinate system to maximize variance along each component. Optimizes for maximum explained variance in each successive component. Used for visualization, noise reduction, and compressing features while preserving information."
+        },
+        {
+          "name": "t-SNE",
+          "description": "Reduces dimensionality nonlinearly to visualize high-dimensional data in 2D or 3D while preserving local structure. Optimizes a probability-based similarity measure between points. Used for visualizing clusters in complex datasets."
+        }
+      ]
+    },
+    {
+      "name": "Anomaly Detection",
+      "children": [
+        {
+          "name": "Isolation Forest",
+          "description": "Detects anomalies by recursively partitioning data and isolating points that require fewer splits. Optimizes isolation of outliers. Used for fraud detection or sensor fault identification."
+        }
+      ]
+    },
+    {
+      "name": "Time Series Forecasting",
+      "children": [
+        {
+          "name": "ARIMA",
+          "description": "Forecasts sequential data by combining autoregression, differencing, and moving averages. Optimizes likelihood or error metrics for best fit. Used for sales, weather, or stock price prediction."
+        },
+        {
+          "name": "LSTM",
+          "description": "Forecasts sequential or time-dependent data using recurrent neural networks with memory cells. Optimizes a sequence loss function via backpropagation through time. Used for predicting language sequences, stock prices, or sensor readings."
+        }
+      ]
+    },
+    {
+      "name": "Generative Modeling",
+      "children": [
+        {
+          "name": "GANs",
+          "description": "Generates synthetic data by training a generator and discriminator adversarially. Optimizes a min-max loss to produce realistic samples. Used for image synthesis, data augmentation, or creative applications."
+        },
+        {
+          "name": "Variational Autoencoders (VAE)",
+          "description": "Generates data by learning a probabilistic latent representation. Optimizes the reconstruction loss plus a regularization term (KL divergence). Used for generating images, text, or anomaly detection."
+        }
+      ]
+    }
+  ]
+}
